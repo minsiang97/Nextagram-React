@@ -15,7 +15,6 @@ function HomePage () {
     useEffect (() => {
     axios.get('https://insta.nextacademy.com/api/v1/users')
     .then(function(response) {
-      // console.log(response.data);
       updateUsers(response.data)
     })
   }, [])
